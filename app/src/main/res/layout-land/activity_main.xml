@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbg"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_wcMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/welcomeMessage"
+        android:textColor="@color/textColor1"
+        android:textSize="36sp"
+        app:fontFamily="@font/greatvibes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView_main"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291"
+        app:srcCompat="@drawable/mainmenupizza" />
+
+
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!---->
+
+    <TextView
+        android:id="@+id/lbl_wcMessage2"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
+        android:gravity="center"
+        android:text="@string/welcomeMessage2"
+        android:textColor="@color/textColor1"
+        android:textSize="30sp"
+        app:fontFamily="@font/greatvibes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/shapes"
+        android:onClick="SignUp"
+        android:text="@string/btn_btnSignUp"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lbl_wcMessage2" />
+
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapes"
+        android:onClick="SignIn"
+        android:text="@string/btn_btnSignIn"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_wcMessage2"
+        app:layout_constraintTop_toTopOf="@+id/btn_signUp" />
+
+</android.support.constraint.ConstraintLayout>

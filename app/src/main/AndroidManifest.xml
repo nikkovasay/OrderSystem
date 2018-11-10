@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nikko.ordersystem">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:name=".activity.AppController"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SignIn" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SignUp" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.PizzaMenu" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".activity.Payment" />
+        <activity android:name=".admin_activity.AdminMainMenu"></activity>
+        <activity android:name=".admin_activity.AddAdminPizza" android:screenOrientation="portrait" />
+        <activity android:name=".activity.CartRecycleView" android:screenOrientation="portrait"></activity>
+        <!-- <activity android:name=".TestGrid"></activity> -->
+        <activity android:name=".admin_activity.ManageVoucher"></activity>
+    </application>
+
+</manifest>

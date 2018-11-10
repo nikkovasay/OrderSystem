@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbg"
+    tools:context=".activity.SignIn">
+
+    <ImageView
+        android:id="@+id/imgView_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/signinpizza" />
+
+    <TextView
+        android:id="@+id/lblSignInUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSignInUsername"
+        android:layout_alignStart="@+id/txtSignInUsername"
+        android:text="@string/lbl_username"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic" />
+
+
+    <EditText
+        android:id="@+id/txtSignInUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="212dp"
+        android:backgroundTint="@color/textColor1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor1" />
+
+
+    <TextView
+        android:id="@+id/lblSignInPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSignInPassword"
+        android:layout_alignStart="@+id/lblSignInUsername"
+        android:text="@string/lbl_password"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnSignInSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/buttonColor"
+        android:text="@string/btn_btnSignIn"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/txtSignInPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp"
+        android:backgroundTint="@color/textColor1"
+        android:textColor="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/chkBox_Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginBottom="69dp"
+        android:text="For Admin Log In"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

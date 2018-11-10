@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--Colors come from https://www.shutterstock.com/blog/101-color-combinations-design-inspiration?proxy_env=sstk&kw=&gclsrc=aw.ds&gclid=Cj0KCQjwuafdBRDmARIsAPpBmVUTZK54UVkGuD6V-ivIBHShOWlfNM_ScilgAJNydZ4i903ogMSSKagaAiBrEALw_wcB&dclid=CLbu3JTy1d0CFRGKwgod7tkM9w-->
+    <!--Subdued Succulent-->
+    <!--Custom Colors-->
+
+    <color name="textColor1">#ffffff</color>
+    <color name="background">#3d3833</color>
+    <color name="buttonColor">#75706a</color>
+</resources>

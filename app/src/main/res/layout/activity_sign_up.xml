@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUp"
+    android:background="@drawable/woodbg">
+
+    <ImageView
+        android:id="@+id/imgView_signInPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="216dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/pizzasignup" />
+
+    <Button
+        android:id="@+id/btnSignUpSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/buttonColor"
+        android:text="@string/lbl_signUp"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/txtSignUpUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="242dp"
+        android:backgroundTint="@color/textColor1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor1" />
+
+    <EditText
+        android:id="@+id/txtSignUpPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="159dp"
+        android:backgroundTint="@color/textColor1"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtSignUpAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:backgroundTint="@color/textColor1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lblSignUpUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSignUpUsername"
+        android:layout_alignStart="@+id/txtSignUpUsername"
+        android:text="@string/lbl_username"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/lblSignUpPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSignUpPassword"
+        android:layout_alignStart="@+id/txtSignUpUsername"
+        android:text="@string/lbl_password"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/lblSignUpAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSignUpAddress"
+        android:layout_alignStart="@+id/txtSignUpUsername"
+        android:text="@string/lbl_address"
+        android:textColor="@color/textColor1"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

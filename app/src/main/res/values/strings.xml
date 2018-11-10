@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">OrderSystem</string>
+    <string name="generic_content_desc">Description</string>
+    <string name="email">Email</string>
+    <string name="createAdmin">Create Admin User</string>
+
+
+    <!--Main Page-->
+    <string name="welcomeMessage">Welcome To PizzaLove!!</string>
+    <string name="welcomeMessage2">Sign Up or Sign In</string>
+    <string name="btn_btnSignUp">Sign Up</string>
+    <string name="btn_btnSignIn">Sign In</string>
+
+    <!--Sign In Page-->
+    <string name="lbl_username">Username</string>
+    <string name="lbl_password">Password</string>
+    <string name="btn_signIn">Sign In</string>
+
+    <!--Sign Up Page-->
+    <string name="lbl_address">Address</string>
+    <string name="lbl_signUp">Sign Up</string>
+
+
+    <!--ordermenu XML-->
+    <string name="menu_action_setting">Setting</string>
+    <string name="menu_action_about_us">About Us</string>
+
+    <!--Admin Main Menu-->
+    <string name="admin_AddAdminUser">Add Admin User</string>
+    <string name="admin_AddPizza">Add a Pizza</string>
+    <string name="admin_EditDeletePizza">Edit or Delete a Pizza</string>
+
+
+    <!--Pizza Template-->
+
+</resources>

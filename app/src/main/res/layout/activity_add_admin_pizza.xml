@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbg"
+    tools:context=".admin_activity.AddAdminPizza">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lbl_adminPizzaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza Name"
+                android:textColor="@color/textColor1" />
+
+            <EditText
+                android:id="@+id/txt_adminPizzaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/textColor1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_light" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="299dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lbl_adminPizzaPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza Price"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/txt_adminPizzaPrice"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/textColor1"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lbl_adminPizzaDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza Description"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/txt_adminPizzaDesc"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/textColor1"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_uploadPizzaPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shapes"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="Upload" />
+
+            <ImageView
+                android:id="@+id/imgView_imgPizza"
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/pizza1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_adminCreatePizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shapes"
+                android:layout_alignParentTop="true"
+                android:onClick="addAdminPizza"
+                android:text="Add Pizza" />
+
+            <Button
+                android:id="@+id/btnUpdatePizza"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shapes"
+                android:onClick="updatePizza"
+                android:text="Update Pizza"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnDeletePizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shapes"
+                android:onClick="deletePizza"
+                android:text="Delete "
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listViewPizza"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:cacheColorHint="@android:color/white"
+        android:textColor="#ffff00"
+        android:focusableInTouchMode="false"
+        android:isScrollContainer="false" />
+
+</RelativeLayout>

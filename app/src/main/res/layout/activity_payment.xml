@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Payment"
+    android:background="@drawable/woodbg"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="517dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/lblTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Total Amount : "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/lblAmountPayment"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="130.00 NZD"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/txtVoucherCode"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Enter Voucher Code Here.." />
+
+            <Button
+                android:id="@+id/btnVoucher"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapes"
+                android:text="Apply Voucher"
+                android:textColor="@android:color/white" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnOrderNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shapes"
+        android:text="Order Now !"
+        android:onClick="payNow"/>
+
+</LinearLayout>
